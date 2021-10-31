@@ -13,4 +13,9 @@ To compare with the client-side load balancing, the proxy architecture is typica
 
 ## Installation
 
+
+## Workflow
+
+
 ## Contributing to GRPCHub
+We welcome contributions. Please see [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
