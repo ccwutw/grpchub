@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option go_package = "github.com/ccwutw/grpchub/message";
+
+package message;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  // Send many greetings
+  rpc LotsOfReplies(HelloRequest) returns (stream HelloReply) {}
+
+  // Send many greetings to many people
+  rpc ManyHellos (stream HelloRequest) returns (stream HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
