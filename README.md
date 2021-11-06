@@ -12,10 +12,15 @@ The LB keeps track of load on each server and distributes load via different alg
 To compare with the client-side load balancing, the proxy architecture is typically used for user facing services where clients from open internet can connect to servers in a data center.
 
 ## Installation
-
+Install Go (https://golang.org/doc/install)
+sudo apt install protobuf-compiler-grpc
+go get -u google.golang.org/protobuf/protoc-gen-go
+go get -u google.golang.org/grpc
 
 ## Workflow
-
+1.launch server program
+2.launch proxy program
+3. execute client program
 
 ## Contributing to GRPCHub
 We welcome contributions. Please see [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
